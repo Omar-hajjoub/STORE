@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: rgb(76, 78, 79);
+    color: white;
+}
+
+.conainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .cardinput{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 800px;
+        height: 100vh;
+        top: 50px;
+        gap: 20px;
+
+        input{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            border: none;
+            outline: none;
+            transition: 2s;
+            border-radius: 10px;
+
+            &:focus{
+                transform: scale(1.1);
+                transition: 2s;
+            }
+            
+        }
+
+        .cardtext{
+            position: relative;
+            width: 100%;
+            input{
+                width: 20%;
+            }
+
+
+            #totale{
+                background-color: red;
+                color: black;
+                font-size: 20px;
+            }
+    
+
+        }
+
+        button{
+            width: 100%;
+            background-color: rgb(87, 11, 219);
+            border-radius: 30px;
+            color: white;
+            transition: 2s;
+
+            &:hover{
+             transform: scale(1.1);
+             transition: 2s;
+             background-color: rgb(255, 8, 214);
+
+            }
+        }
+
+
+        .btnserch {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 30px;
+            
+        button{
+           width: 200px;
+        }
+        }
+    }
+
+
+
+}
+.table{
+    height: 500px;
+    width: 100%;
+overflow: auto;
+}
+table{
+    width: 100%;
+text-align: center;
+ 
+}
+th,td{
+    padding: 10px;
+}
+
+#Update{
+    width: 100%;
+    &:hover{
+        background-color: brown;
+    }
+}
+
+#DeleAll{
+    display:none ;
+}
+
+
+
+@media (max-width:580px) {
+    .conainer{
+width: 97%;
+margin: 10px;
+overflow-y: auto;
+        .cardinput{
+          width: 100%;
+        }
+    }
+.table{
+    position: relative;
+    margin-right: 5px;
+    overflow: auto;
+
+}
+    table{
+        max-width: 100px;
+        margin-right: 5px;
+     
+    }
+    th,td{
+        padding: 3px;
+     
+    }
+}

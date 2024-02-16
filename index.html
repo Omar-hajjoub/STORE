@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+  
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/photo/laptop (1).png" type="image/x-icon">
+</head>
+<body>
+    <div class="conainer">
+        <h1>Hello to wlcome</h1>
+
+        <div class="cardinput">
+            <input type="text" name="" id="tatiletext" placeholder="Tatile">
+            <div class="cardtext">
+               
+                <input  onkeyup="totaleprise()" type="number" name=""  placeholder="PRICE" id="PRICE"> 
+                <input onkeyup="totaleprise()" type="number" name="" placeholder="taxes"  id="taxes">
+                <input onkeyup="totaleprise()" type="number" name=""  placeholder="ads" id="ads">
+                <input onkeyup="totaleprise()" type="number" name="" placeholder="discount" id="discount">
+                <small  id="totale">Total : <span  id="totalepriset"></span > </small>
+
+            </div>  
+            <input type="text" name="" id="Count" placeholder="Count">
+            <input type="text" name="" id="Catogary" placeholder="Catogary">
+
+            <button id="create" >Create</button>
+            <input onkeyup="searchdata(this.value)" type="search" name="" id="serach" placeholder="Search">
+
+            <div class="btnserch">
+                <button id="srchtitle" onclick="seracheMod(this.id)">Search By Title</button>
+                <button id="srchCategory" onclick="seracheMod(this.id)">Search By Category</button>
+            </div>
+            <button id="DeleAll" onclick=" delatall()">Delet All ( <span id="numer"></span> )</button>
+<div class="table">
+            <table border="2px">
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>PRICE</th>
+                    <th>TAXES</th>
+                    <th>ADS</th>
+                    <th>DISCOUNT</th>
+                    <th>TOTAL</th>
+                    <th>CATEGORY</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+<tbody id="tablennow">
+              
+            </tbody>
+            </table>
+        </div>
+                    
+        </div>
+    </div>
+
+
+
+
+
+
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
